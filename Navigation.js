@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./screens/HomeScreen";
 import SettingScreen from "./screens/SettingScreen";
 import StackScreen from "./screens/StackScreen";
+import MyKeyBoard from "./src/components/MyKeyboard.tsx"
 
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -20,7 +21,10 @@ function MyStack(){
             component={HomeScreen}/>  
             <HomeStackNavigator.Screen
             name="Stack"
-            component={StackScreen}/>
+            component={MyKeyBoard}/>
+            <HomeStackNavigator.Screen
+            name="Image"
+            component={SettingScreen}/>
         </HomeStackNavigator.Navigator>
     )
 }

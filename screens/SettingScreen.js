@@ -1,17 +1,30 @@
 import React from "react";
-import {View, Text, StyleSheet, TouchableOpacity} from "react-native";
+import {View, Text, StyleSheet, TouchableOpacity,Image} from "react-native";
+
+
+const styles = StyleSheet.create({
+    container: {
+      paddingTop: 50,
+    },
+    tinyLogo: {
+      width: 100,
+      height: 100,
+    },
+    logo: {
+      width: 66,
+      height: 58,
+    },
+  });
 
 const SettingScreen = () =>{
     return(
         <View>
-            <Text
-                Style={{
-                    fontSize: 30,
-                    textAling:"center",
-                    marginTop:"20%"
-                }}
-            >SettingScreen</Text>
-
+            <Image
+        style={styles.tinyLogo}
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+      />
 
         </View>
     )
